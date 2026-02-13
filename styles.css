@@ -1,0 +1,18 @@
+#container {
+  width: 40rem;
+  height: 25rem;
+  min-width: 300px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 100vh;
+  background-color: rgb(155, 110, 160);
+}
