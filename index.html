@@ -9,7 +9,7 @@
   <body>
     <div id="container">
       <img id="image" src="gifs/mocha-jumping.gif" alt="" />
-      <h3 id="h3">HI BEBIIIIII!!</h3>
+      <h3 id="h3">HI MY BEBELOVEY DOVEY!!</h3>
     </div>
     <div id="button-container">
       <button id="button" onClick="buttonClick()">Yes???</button>
@@ -30,7 +30,7 @@
         switch (view) {
           case 1:
             image.src = "gifs/mocha-jumping.gif";
-            mochaSays.innerHTML = "HI BEBIIIIII!!";
+            mochaSays.innerHTML = "HI MY BEBELOVEY DOVEY!!";
             buttonTxt.innerHTML = "Yes???";
             break;
           case 2:
@@ -47,13 +47,13 @@
             image.src = "gifs/dudu-asking.gif";
             mochaSays.innerHTML = "WILL YOU BE MY VALENTINE?";
             buttonContainer.innerHTML =
-              "<button id='button' onClick='saidYes()'>Yes</button> <button id='button2' onClick='buttonClick()'>No</button>";
+              "<button id='button' >Yes</button> <button id='button2' onClick='buttonClick()'>No</button>";
             break;
           case 5:
             image.src = "gifs/mocha-sad.gif";
             mochaSays.innerHTML = "WILL YOU PLEASE BE MY <br>VALENTINE????";
             buttonContainer.innerHTML =
-              "<button id='button' onClick='saidYes()'>Yes</button> <button id='button2' onClick='buttonClick()'>No</button>";
+              "<button id='button' >Yes</button> <button id='button2' onClick='buttonClick()'>No</button>";
             break;
           case 6:
             image.src = "gifs/mocha suyo si mochi.gif";
@@ -65,25 +65,25 @@
             image.src = "gifs/dudu-dudu-angry.gif";
             mochaSays.innerHTML = "AH AYAW MO";
             buttonContainer.innerHTML =
-              "<button id='button' onClick='saidYes()'>Gusto</button> <button id='button2' onClick='buttonClick()'>TALAGA</button>";
+              "<button id='button' >Gusto</button> <button id='button2' onClick='buttonClick()'>TALAGA</button>";
             break;
           case 8:
             image.src = "gifs/dudu-angry.gif";
             mochaSays.innerHTML = "AYAW MO BA TALAGA?";
             buttonContainer.innerHTML =
-              "<button id='button' onClick='saidYes()'>Gusto</button> <button id='button2' onClick='buttonClick()'>ANG KULIT!</button>";
+              "<button id='button' >Gusto</button> <button id='button2' onClick='buttonClick()'>ANG KULIT!</button>";
             break;
           case 9:
             image.src = "gifs/dudu-ito-ayaw.gif";
             mochaSays.innerHTML = "ITO, AYAW?";
             buttonContainer.innerHTML =
-              "<button id='button' onClick='saidYes()'>Gusto</button> <button class='button2 absolute' onClick='buttonClick()'>Ayaw</button>";
+              "<button id='button' >Gusto</button> <button class='button2 absolute' onClick='buttonClick()'>Ayaw</button>";
             break;
           case 10:
             image.src = "gifs/dudu-ito-ayaw.gif";
             mochaSays.innerHTML = "ITO, AYAW PARIN????";
             buttonContainer.innerHTML =
-              "<button id='button' onClick='saidYes()'>Gusto</button> <button class='minimizedBtn changedPos' onClick='buttonClick()'>Ayaw</button>";
+              "<button id='button' >Gusto</button> <button class='minimizedBtn changedPos' onClick='buttonClick()'>Ayaw</button>";
             break;
           case 11:
             image.src = "gifs/dudu-laughing-hard.gif";
@@ -92,16 +92,62 @@
               "<button id='button' onClick='buttonClick()'>Oh?</button>";
             break;
           case 12:
-            image.src = "gifs/dudu-laughing-hard.gif";
+            image.src = "gifs/dudu-crying.gif";
             mochaSays.innerHTML = "PAYAG KA NA PO BEBE, TANUNGIN KITA ULITTT";
             buttonContainer.innerHTML =
               "<button id='button' onClick='buttonClick()'>Sige</button>";
             break;
           case 13:
-            image.src = "gifs/dudu-laughing-hard.gif";
+            image.src = "gifs/hee-hee.gif";
             mochaSays.innerHTML = "WILL YOU BE MY VALENTINE?";
             buttonContainer.innerHTML =
               "<button id='button' onClick='buttonClick()'>Oo Na</button>";
+            break;
+          case 14:
+            image.src = "gifs/mocha-thanking-mochi.gif";
+            mochaSays.innerHTML = "YAYYY! THANK YOU BEBEEEEE.";
+            buttonContainer.innerHTML =
+              "<button id='button' onClick='buttonClick()'>OKAY BOUNDARIES NA</button>";
+            break;
+          case 15:
+            image.src = "gifs/dudu-thinking.gif";
+            mochaSays.innerHTML = "SO FAR ANG PLANS KO FOR TOMORROW AY...";
+            buttonContainer.innerHTML =
+              "<button id='button' onClick='buttonClick()'>ANO?</button>";
+            break;
+          case 16:
+            let cont = document.getElementById("container");
+            cont.innerHTML = `
+              <img id="image" src="gifs/mocha-hugs-mochi.gif" />
+
+              <div class="info-content">
+                <p><strong>WHERE:</strong> Dutch Fun Farm po bebe if morning ka free. Cafe Rogelio if night naman po.</p>
+                <p><strong>TIME:</strong> 8:30 AM if Dutch – 6:30 PM if Cafe Rogelio </p>
+                <p><strong>THEME:</strong> Your favorite black and white lang po. Pero you can wear whatever you want.</p>
+
+                <p><b>I LOVE YOU ALWAYSSSS MWAAAAAA</b></p>
+              </div>`;
+
+            buttonContainer.innerHTML = `
+              <button id='button' onClick='buttonClick()'>Okayyy</button>
+            `;
+            break;
+          case 17:
+            view = 0;
+            // Restore the original structure
+            let container = document.getElementById("container");
+            container.innerHTML = `
+              <img id="image" src="gifs/mocha-jumping.gif" alt="" />
+              <h3 id="h3">HI MY BEBELOVEY DOVEY!!</h3>
+            `;
+            buttonContainer.innerHTML = `
+              <button id="button" onClick="buttonClick()">Yes???</button>
+            `;
+
+            // Re-assign the variables since we created new elements
+            image = document.getElementById("image");
+            mochaSays = document.getElementById("h3");
+            buttonTxt = document.getElementById("button");
             break;
           default:
             imgSrc = "gifs/mocha-happy.gif";

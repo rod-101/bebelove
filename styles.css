@@ -97,3 +97,48 @@ button {
   left: 2rem;
   top: 12rem;
 }
+
+.info-card {
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Image */
+.info-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Content */
+.info-content {
+  padding: 1rem;
+}
+
+.info-content p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info-content strong {
+  color: #333;
+}
+
+/* Responsive improvement for larger screens */
+@media (min-width: 768px) {
+  .info-card {
+    max-width: 520px;
+  }
+
+  .info-content p {
+    font-size: 1rem;
+  }
+}
