@@ -94,6 +94,6 @@ button {
 .changePos {
   background-color: rgb(213, 32, 59);
   position: absolute;
-  left: 10rem;
-  top: 5rem;
+  left: 2rem;
+  top: 12rem;
 }
