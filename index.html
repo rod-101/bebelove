@@ -16,6 +16,31 @@
     </div>
 
     <script>
+      // Preload all images to prevent delay
+      const imagesToPreload = [
+        "gifs/mocha-jumping.gif",
+        "gifs/mocha-happy.gif",
+        "gifs/dudu-so.gif",
+        "gifs/dudu-asking.gif",
+        "gifs/mocha-sad.gif",
+        "gifs/mocha suyo si mochi.gif",
+        "gifs/dudu-dudu-angry.gif",
+        "gifs/dudu-angry.gif",
+        "gifs/dudu-ito-ayaw.gif",
+        "gifs/dudu-laughing-hard.gif",
+        "gifs/dudu-crying.gif",
+        "gifs/hee-hee.gif",
+        "gifs/mocha-thanking-mochi.gif",
+        "gifs/dudu-thinking.gif",
+        "gifs/mocha-hugs-mochi.gif",
+      ];
+
+      // Create image objects and load them into browser cache
+      imagesToPreload.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+
       let buttonContainer = document.getElementById("button-container");
       let mochaSays = document.getElementById("h3");
       let buttonTxt = document.getElementById("button");
