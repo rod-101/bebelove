@@ -1,13 +1,38 @@
-#container {
-  width: 40rem;
-  height: 25rem;
-  min-width: 300px;
-  display: flex;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  column-gap: 1rem;
+@media screen and (min-width: 701px) {
+  #container {
+    width: 40rem;
+    height: 25rem;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  #image {
+    width: 256px;
+    height: 254px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #container {
+    width: 25rem;
+    height: 15rem;
+    min-width: 300px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  #image {
+    width: 127px;
+    height: 127px;
+  }
 }
 
 body {
@@ -31,11 +56,6 @@ button {
   font-size: large;
   border: none;
   border-radius: 8px;
-}
-
-#image {
-  width: 256px;
-  height: 254px;
 }
 
 #button2 {
