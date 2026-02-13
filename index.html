@@ -117,8 +117,9 @@
             break;
           case 16:
             let cont = document.getElementById("container");
+            cont.style.flexDirection = "column";
             cont.innerHTML = `
-              <img id="image" src="gifs/mocha-hugs-mochi.gif" />
+              <img id="image" src="gifs/mocha-hugs-mochi.gif" style="width: 200px; height: 200px;" />
 
               <div class="info-content">
                 <p><strong>WHERE:</strong> Dutch Fun Farm po bebe if morning ka free. Cafe Rogelio if night naman po.</p>
@@ -136,6 +137,7 @@
             view = 0;
             // Restore the original structure
             let container = document.getElementById("container");
+            container.style.flexDirection = "row";
             container.innerHTML = `
               <img id="image" src="gifs/mocha-jumping.gif" alt="" />
               <h3 id="h3">HI MY BEBELOVEY DOVEY!!</h3>
