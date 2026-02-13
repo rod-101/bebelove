@@ -75,6 +75,7 @@ button {
   font-size: large;
   border: none;
   border-radius: 8px;
+  z-index: 10;
 }
 
 #button2 {
